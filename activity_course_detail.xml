@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFFFFF">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#000000">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_media_play"
+            android:layout_gravity="center"
+            app:tint="#FFFFFF"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/detailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:textColor="#333333"/>
+    <Button
+        android:id="@+id/btnWatchVideo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Watch Video Tutorial"
+        android:backgroundTint="#0026FF"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@android:drawable/ic_media_play"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/btnOpenLink"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Open Study Materials"
+        android:backgroundTint="#0056b3"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@android:drawable/ic_menu_view"
+        android:padding="16dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/detailDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course description..."
+        android:textSize="16sp"
+        android:lineSpacingExtra="4dp"
+        android:textColor="#666666"/>
+
+</LinearLayout>
